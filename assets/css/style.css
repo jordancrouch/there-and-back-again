@@ -1,0 +1,114 @@
+/* CSS variables */
+:root {
+    /* Main body font and h3-h6 */
+    --primary-font: 'Montserrat', sans-serif;
+    /* h1 & h2 font */
+    --secondary-font: 'Metamorphous', serif;
+    /* Dark blue */
+    --primary-color: #022C40;
+    /* Turquoise */
+    --secondary-color: #3AAC9C;
+    /* Light blue */
+    --tertiary-color: #9FC9DF;
+    /* Light blue border, 50% opacity */
+    --border-color: #9FC9DF80;
+    /* White */
+    --white: #FFFFFF;
+    /* Set default font size / line height */
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Global styles */
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    /* Push the top of the header down under the fixed navbar */
+    padding-top: 69.9833px;
+}
+
+/* Typography */
+h1,
+h2 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+/* Navbar */
+#navbar {
+    padding-top: 0.666rem;
+    padding-bottom: 0.666rem;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+#navbar .logo {
+    width: 195px;
+}
+
+#navbar .navbar-toggler {
+    padding: 0;
+    border: none;
+}
+
+#navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%282, 44, 64, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#navbar .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: color 0.2s ease-in-out;
+}
+
+#navbar .navbar-nav .nav-item .nav-link.active,
+#navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 12px 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Media queries */
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+    /* Global styles */
+    body {
+        /* Push the top of the header down under the fixed navbar */
+        padding-top: 100px;
+    }
+
+    /* Navbar */
+    #navbar {
+        padding-top: 1.278rem;
+        padding-bottom: 1.278rem;
+    }
+
+    #navbar .logo {
+        width: 260px;
+    }
+
+    #navbar .navbar-nav .nav-item .nav-link {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #navbar .navbar-nav .nav-item .btn {
+        margin-left: 16px;
+    }
+}
