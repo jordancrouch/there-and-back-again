@@ -92,6 +92,10 @@ h6 {
     background-color: var(--primary-color);
 }
 
+.card.featured {
+    height: 100%;
+}
+
 .card.featured:before {
     content: '';
     position: absolute;
@@ -105,6 +109,10 @@ h6 {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     z-index: 0;
     mix-blend-mode: multiply;
+}
+
+.card.featured .card-img-overlay {
+    z-index: 1;
 }
 
 .card.overlay:before {
@@ -122,8 +130,9 @@ h6 {
     opacity: 0.5;
 }
 
-.card.featured .card-img-overlay {
-    z-index: 1;
+.card .card-img {
+    min-height: 220px;
+    object-fit: cover;
 }
 
 /* Navbar */
@@ -255,5 +264,10 @@ h6 {
 
     #header .card .card-img-overlay:before {
         height: 66.66%;
+    }
+
+    /* 100% height */
+    .h-100-xl {
+        height: 100%;
     }
 }
