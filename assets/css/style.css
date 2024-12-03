@@ -107,6 +107,21 @@ h6 {
     mix-blend-mode: multiply;
 }
 
+.card.overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: 0;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+}
+
 .card.featured .card-img-overlay {
     z-index: 1;
 }
