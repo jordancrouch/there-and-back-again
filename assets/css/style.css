@@ -17,6 +17,8 @@
     /* Set default font size / line height */
     font-size: 18px;
     line-height: 28px;
+    /* Navbar height */
+    --navbar-height: 69.9833px;
 }
 
 /* Global styles */
@@ -24,7 +26,7 @@ body {
     font-family: var(--primary-font);
     color: var(--primary-color);
     /* Push the top of the header down under the fixed navbar */
-    padding-top: 69.9833px;
+    padding-top: var(--navbar-height);
 }
 
 /* Typography */
@@ -52,6 +54,7 @@ h2 {
 }
 
 #navbar .navbar-toggler .navbar-toggler-icon {
+    /* Change colour of default svg icon used */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%282, 44, 64, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -66,6 +69,43 @@ h2 {
     color: var(--secondary-color);
 }
 
+/* Header */
+#header .card {
+    background-color: var(--primary-color);
+    border-radius: 0;
+    border: none;
+}
+
+#header .card .card-img {
+    border-radius: 0;
+    /* Set min height of header */
+    min-height: 860px;
+    /* Set max height of header to 100vh minus header height */
+    max-height: calc(100vh - var(--navbar-height));
+    /* Set image size to cover to fill space and maintain ratio */
+    object-fit: cover;
+}
+
+#header .card .card-img-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#022c40+0,022c40+100&1+0,0+100 */
+    background: linear-gradient(to bottom, rgba(2, 44, 64, 1) 0%, rgba(2, 44, 64, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    z-index: 0;
+    mix-blend-mode: multiply;
+}
+
+#header .card .card-img-overlay .container {
+    position: relative;
+    z-index: 1;
+}
+
 /* Buttons */
 .btn {
     font-weight: 600;
@@ -78,19 +118,34 @@ h2 {
     border-color: var(--primary-color);
 }
 
-.btn-primary:hover {
+.btn.btn-primary:hover {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
 }
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn.btn-secondary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn i {
+    margin-left: 10px;
+}
+
 
 /* Media queries */
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
 
-    /* Global styles */
-    body {
-        /* Push the top of the header down under the fixed navbar */
-        padding-top: 100px;
+    /* CSS variables */
+    :root {
+        /* Navbar height */
+        --navbar-height: 100px;
     }
 
     /* Navbar */
@@ -132,5 +187,25 @@ h2 {
         width: 100%;
         right: auto;
         left: 0;
+    }
+}
+
+/* Extra large devices (Desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+    /* Typography */
+    h1 {
+        font-size: 3.33rem;
+    }
+
+    /* Header */
+    #header .card .card-img-overlay {
+        display: flex;
+        align-items: center;
+    }
+
+
+    #header .card .card-img-overlay:before {
+        height: 66.66%;
     }
 }
