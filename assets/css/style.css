@@ -39,7 +39,6 @@ h2 {
 /* Buttons */
 .btn {
     font-weight: 600;
-    border-radius: 30px;
     padding: 12px 20px;
 }
 
@@ -117,12 +116,9 @@ h2 {
 /* Header */
 #header .card {
     background-color: var(--primary-color);
-    border-radius: 0;
-    border: none;
 }
 
 #header .card .card-img {
-    border-radius: 0;
     /* Set min height of header */
     min-height: 860px;
     /* Set max height of header to 100vh minus header height */
@@ -210,13 +206,6 @@ h2 {
     h1 {
         font-size: 3.33rem;
     }
-
-    /* Header */
-    #header .card .card-img-overlay {
-        /* display: flex; */
-        /* align-items: center; */
-    }
-
 
     #header .card .card-img-overlay:before {
         height: 66.66%;
