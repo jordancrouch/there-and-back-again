@@ -29,6 +29,19 @@ body {
     padding-top: var(--navbar-height);
 }
 
+/* Background colours */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary-color);
+}
+
 /* Typography */
 h1,
 h2 {
@@ -72,6 +85,10 @@ h6 {
 .btn.btn-read-more {
     padding: 0;
     color: var(--secondary-color);
+}
+
+.btn.btn-read-more.primary {
+    color: var(--primary-color);
 }
 
 .btn.btn-read-more:hover {
