@@ -95,6 +95,11 @@ h6 {
     transition: all 0.2s ease-in-out;
 }
 
+/* Border */
+.border-top {
+    border-top: 1px solid rgba(159, 201, 223, 0.5);
+}
+
 /* Cards */
 .card {
     background-color: var(--primary-color);
@@ -183,11 +188,18 @@ h6 {
 
 #header .card .card-img {
     /* Set min height of header */
+    min-height: 600px;
+    /* Set max height of header to 100vh minus header height */
+    max-height: 600px;
+    /* Set image size to cover to fill space and maintain ratio */
+    object-fit: cover;
+}
+
+#header.home .card .card-img {
+    /* Set min height of header */
     min-height: 860px;
     /* Set max height of header to 100vh minus header height */
     max-height: calc(100vh - var(--navbar-height));
-    /* Set image size to cover to fill space and maintain ratio */
-    object-fit: cover;
 }
 
 #header .card .card-img-overlay:before {
