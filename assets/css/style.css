@@ -227,6 +227,11 @@ h6 {
     background-color: var(--tertiary-color);
 }
 
+/* Image Gallery */
+#image-gallery img {
+    width: 100%;
+}
+
 /* Footer */
 #footer {
     background-color: var(--primary-color);
