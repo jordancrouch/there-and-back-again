@@ -85,7 +85,7 @@
                             <p class="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
                                 dolorol egestas morbi
                                 sem vulputate etiam facilisis pellentesque ut quis.</p>
-                            <form>
+                            <form id="contact-form" method="GET">
                                 <div class="row">
                                     <div class="mb-3 col-12 col-lg-6">
                                         <label for="name" class="form-label text-white">Name</label>
@@ -110,7 +110,8 @@
                                         the
                                         newsletter</label>
                                 </div>
-                                <button type="submit" class="btn btn-secondary rounded-pill">Send message</button>
+                                <button type="submit" class="btn btn-secondary rounded-pill hover-white">Send
+                                    message</button>
                             </form>
                         </div>
                     </div>
@@ -144,6 +145,25 @@
                                 aria-label="Visit our YouTube page (opens in a new tab)" rel="noopener"><i
                                     class="fa-brands fa-youtube"></i></a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="thankyou-modal" tabindex="-1" aria-labelledby="thankyou-modal-label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-3 text-white" id="thankyou-modal-label">Thank you!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-white">Your message has been submitted successfully, we will be in touch soon.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>

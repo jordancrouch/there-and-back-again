@@ -78,6 +78,12 @@ h6 {
     border-color: var(--primary-color);
 }
 
+.btn.btn-secondary.hover-white:hover {
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--primary-color);
+}
+
 .btn.btn-read-more {
     padding: 0;
     color: var(--secondary-color);
