@@ -135,7 +135,7 @@ h6 {
     mix-blend-mode: multiply;
 }
 
-.card.featured .card-img-overlay {
+.card .card-img-overlay {
     z-index: 2;
 }
 
@@ -150,7 +150,7 @@ h6 {
     height: 100%;
     width: 100%;
     background-color: var(--primary-color);
-    z-index: 0;
+    z-index: 1;
     mix-blend-mode: multiply;
     opacity: 0.5;
 }
