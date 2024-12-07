@@ -22,6 +22,11 @@
 }
 
 /* Global styles */
+/* Force Y scroll when lightbox is open */
+html.fslightbox-open {
+    overflow-y: scroll;
+}
+
 body {
     font-family: var(--primary-font);
     color: var(--primary-color);
@@ -322,11 +327,6 @@ h6 {
 
 .social-links a:hover {
     background-color: var(--secondary-color);
-}
-
-/* Modal */
-#thankyou-modal .modal-dialog .modal-content {
-    background-color: var(--primary-color);
 }
 
 /* Media queries */
