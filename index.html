@@ -91,7 +91,8 @@
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <div class="col-12 col-lg-6 ps-lg-4">
-                        <a class="card-wrapper" href="#">
+                        <a class="card-wrapper" href="#" data-bs-toggle="modal"
+                            data-bs-target="#featured-journal-modal">
                             <div class="card featured border-0 rounded-5 overflow-hidden">
                                 <img src="assets/images/inveruglas-two-card-img.jpg" class="card-img rounded-5"
                                     alt="Balblair Castle">
@@ -133,11 +134,7 @@
         <!-- Contact CTA Section -->
         <section id="contact" class="section py-5">
             <div class="container">
-                <div class="row d-flex flex-column flex-md-row-reverse g-4">
-                    <div class="col-12 col-lg-6 ps-lg-4">
-                        <img class="w-100 rounded-5" src="assets/images/red-squirrel-img.jpg"
-                            alt="Red Squirrel eating a pine cone">
-                    </div>
+                <div class="row g-4">
                     <div
                         class="col-12 col-lg-6 d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start pe-lg-4">
                         <h2>Get in touch</h2>
@@ -145,6 +142,10 @@
                             tellus
                             libero accumsan.</p>
                         <a href="contact.html" class="btn btn-secondary rounded-pill">Contact us</a>
+                    </div>
+                    <div class="col-12 col-lg-6 ps-lg-4">
+                        <img class="w-100 rounded-5" src="assets/images/red-squirrel-img.jpg"
+                            alt="Red Squirrel eating a pine cone">
                     </div>
                 </div>
             </div>
@@ -176,6 +177,39 @@
                                 aria-label="Visit our YouTube page (opens in a new tab)" rel="noopener"><i
                                     class="fa-brands fa-youtube"></i></a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="featured-journal-modal" tabindex="-1" aria-labelledby="featured-journal-modal-label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-4">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-3" id="featured-journal-modal-label">Inveruglas II</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Maecenas quis iaculis velit, hendrerit imperdiet dolor. Aenean sed bibendum est, sit amet
+                            ultricies augue. Ut eu feugiat odio, sed vestibulum est. Nam id fermentum massa, nec tempus
+                            orci. Pellentesque id augue sit amet erat tempus elementum nec sed odio. Donec tincidunt
+                            tincidunt finibus. Vestibulum vulputate scelerisque odio, et egestas ipsum vehicula a. Etiam
+                            nulla lacus, congue et libero id, suscipit consequat diam. Suspendisse pellentesque nisl ex,
+                            sollicitudin fringilla arcu sodales non. Morbi semper lacinia auctor. Donec sed magna ac
+                            turpis eleifend egestas sed nec diam. Nunc feugiat vitae sapien pellentesque cursus. Aliquam
+                            vitae pharetra ex, ac mollis nibh.</p>
+                        <p>Proin euismod leo et odio egestas, ac tincidunt magna bibendum. Curabitur at elementum eros.
+                            Nunc ex est, commodo non elit ut, tempor venenatis mi. Pellentesque habitant morbi tristique
+                            senectus et netus et malesuada fames ac turpis egestas. Vivamus commodo dolor eget vulputate
+                            vulputate. Maecenas dignissim ligula urna, id mattis dolor mollis vel. Mauris consectetur
+                            mollis fermentum. Proin lacinia id mauris vel porttitor. Duis ex est, semper nec suscipit
+                            id, porttitor non mauris. Curabitur fermentum eleifend erat, non rhoncus sem porttitor eget.
+                            Donec eleifend tellus orci, sed tempor ante sollicitudin viverra.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-pill"
+                            data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
