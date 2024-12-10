@@ -161,7 +161,8 @@ h6 {
 }
 
 .card .card-img {
-    min-height: 220px;
+    min-height: 250px;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -389,6 +390,20 @@ h6 {
         right: 0;
         left: auto;
         width: 66.66%;
+        height: 100%;
+    }
+
+    /* Journal columns - styles to make same height and gap as featured journal */
+    .stacked-journals .col-12 {
+        min-height: calc(50% - 13.5px);
+    }
+
+    .stacked-journals .col-12 .card-wrapper {
+        display: block;
+        height: 100%;
+    }
+
+    .stacked-journals .col-12 .card-wrapper .card {
         height: 100%;
     }
 }
