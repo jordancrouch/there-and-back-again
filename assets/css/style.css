@@ -391,6 +391,11 @@ a {
         left: 0;
     }
 
+    /* Header */
+    #header .btn.w-100 {
+        width: auto !important;
+    }
+
     /* Contact form */
     #contact-form {
         padding-bottom: auto;
@@ -434,4 +439,5 @@ a {
     .h-100-xl {
         height: 100%;
     }
+
 }
