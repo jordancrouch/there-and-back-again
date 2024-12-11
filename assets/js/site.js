@@ -1,31 +1,40 @@
 // Wait for page to finish loading
 window.addEventListener("load", () => {
-  // Variables
-  let grid = document.querySelector("#masonry-grid");
-  let form = document.getElementById("message-form");
-  let thankyouModalEl = document.getElementById("thankyou-modal");
-  const thankyouModal = new bootstrap.Modal(thankyouModalEl);
+  // Declare variables
+  const GRID = document.querySelector("#masonry-grid");
+  const CONTACT_FORM = document.getElementById("message-form");
+  const THANKYOU_MODAL_EL = document.getElementById("thankyou-modal");
 
-  // Show thank you modal on form submission
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    thankyouModal.show();
-  });
+  // If thank you modal element exists, create new modal
+  if (THANKYOU_MODAL_EL !== null) {
+    const THANKYOU_MODAL = new bootstrap.Modal(THANKYOU_MODAL_EL);
 
-  // Clear form on modal close
-  thankyouModalEl.addEventListener("hide.bs.modal", () => {
-    form.reset();
-  });
-
-  if (grid !== null) {
-    // Inititialise Masonry
-    let msnry = new Masonry(grid, {
-      percentPosition: true,
+    // Clear form on modal close
+    THANKYOU_MODAL_EL.addEventListener("hide.bs.modal", () => {
+      CONTACT_FORM.reset();
     });
 
-    imagesLoaded(grid).on("progress", () => {
+    // If form exsists
+    if (CONTACT_FORM !== null) {
+      // Show thank you modal on form submission
+      CONTACT_FORM.addEventListener("submit", (e) => {
+        e.preventDefault();
+        THANKYOU_MODAL.show();
+      });
+    }
+  }
+
+  if (GRID !== null) {
+    // Inititialise Masonry
+    let msnry = new Masonry(GRID, {
+      itemSelector: ".grid-item",
+      percentPosition: true,
+      gutter: 20,
+    });
+
+    imagesLoaded(GRID).on("progress", () => {
       // Layout Masonry after each image loads
-      masonry.layout();
+      msnry.layout();
     });
   }
 });

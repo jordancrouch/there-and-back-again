@@ -281,8 +281,21 @@ a {
     background-color: var(--tertiary-color);
 }
 
-/* Image Gallery */
-#image-gallery img {
+/* Masonry grid */
+#masonry-grid .grid-sizer,
+#masonry-grid .grid-item {
+    width: 100%;
+}
+
+#masonry-grid .grid-item {
+    margin-bottom: 20px;
+}
+
+#masonry-grid .grid-item a {
+    display: block;
+}
+
+#masonry-grid .grid-item a img {
     width: 100%;
 }
 
@@ -394,6 +407,11 @@ a {
     /* Header */
     #header .btn.w-100 {
         width: auto !important;
+    }
+
+    /* Masonry grid */
+    #masonry-grid .grid-item {
+        width: calc(50% - 10px);
     }
 
     /* Contact form */
