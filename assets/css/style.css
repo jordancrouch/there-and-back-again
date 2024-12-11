@@ -52,6 +52,10 @@ h6 {
     font-size: 0.78rem;
 }
 
+a {
+    color: var(--secondary-color);
+}
+
 /* Buttons */
 .btn {
     font-weight: 600;
@@ -264,6 +268,12 @@ h6 {
 #header .card .card-img-overlay .container {
     position: relative;
     z-index: 1;
+}
+
+/* Sections */
+/* Add scroll margin for anchor links */
+.section {
+    scroll-margin-top: var(--navbar-height);
 }
 
 /* Gallery section */
