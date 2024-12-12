@@ -293,10 +293,17 @@ a {
 
 #masonry-grid .grid-item a {
     display: block;
+    overflow: hidden;
+    border-radius: var(--bs-border-radius-xl);
 }
 
 #masonry-grid .grid-item a img {
     width: 100%;
+    transition: transform 0.3s ease;
+}
+
+#masonry-grid .grid-item a:hover img {
+    transform: scale(1.05);
 }
 
 /* Contact form */
