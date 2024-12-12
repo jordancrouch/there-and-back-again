@@ -1,6 +1,6 @@
 # There & Back Again
 
-![There & Back Again Mockups](https://github.com/jordancrouch/there-and-back-again/blob/main/assets/mockups/there-and-back-again-responsive-mockups.jpg?raw=true)
+![There & Back Again Mockups](https://jordancrouch.github.io/there-and-back-again/assets/mockups/there-and-back-again-responsive-mockups.jpg)
 
 This is a personal travel journal website, used to document and share trips taken to Scotland.
 
@@ -66,7 +66,7 @@ This is a personal travel journal website, used to document and share trips take
 
 ### Wireframes
 
-[View](https://jordancrouch.github.io/assets/wireframes/there-and-back-again-wireframes.pdf) - it is recommended to download the wireframe PDF file for a better viewing experience, which can be done by right-clicking the link, followed by selecting 'Save Link As...'.
+[View](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-wireframes.pdf) - it is recommended to download the wireframe PDF file for a better viewing experience, which can be done by right-clicking the link, followed by selecting 'Save Link As...'.
 
 ### Design
 
@@ -85,7 +85,7 @@ The colour palette consists of four colours: dark blue, light blue, turquoise, a
 
 **High-fidelity Designs**
 
-[View](https://jordancrouch.github.io/assets/wireframes/there-and-back-again-design.pdf) - it is recommended to download the design PDF file for a better viewing experience, which can be done by right-clicking the link, followed by selecting 'Save Link As...'.
+[View](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-design.pdf) - it is recommended to download the design PDF file for a better viewing experience, which can be done by right-clicking the link, followed by selecting 'Save Link As...'.
 
 ## Features
 
