@@ -1,6 +1,6 @@
 # There & Back Again
 
-![There & Back Again Mockups](https://jordancrouch.github.io/assets/mockups/there-and-back-again-mockups.jpg")
+![There & Back Again Mockups](https://github.com/jordancrouch/there-and-back-again/blob/main/assets/mockups/there-and-back-again-responsive-mockups.jpg?raw=true)
 
 This is a personal travel journal website, used to document and share trips taken to Scotland.
 
