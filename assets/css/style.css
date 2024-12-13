@@ -119,7 +119,7 @@ a {
     transition: all 0.2s ease-in-out;
 }
 
-/* Border */
+/* Border utility class */
 .border-top {
     border-top: 1px solid rgba(159, 201, 223, 0.5);
 }
@@ -312,10 +312,6 @@ a {
 }
 
 /* Contact form */
-#contact-form {
-    position: relative;
-}
-
 #contact-form .form-wrapper {
     background-color: var(--primary-color);
     position: relative;
