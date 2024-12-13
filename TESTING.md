@@ -72,13 +72,204 @@ All feature testing was done manually, as outlined below:
 - Check that all navigation links apply the active state on the correct page.
 - Check the hover state of each of the navigation links is working on every page.
 - Click on the logo in the navigation bar on each page to check that it takes you back to the homepage.
-- Check that the navigation bar appearance is the same across all pages, ensuring that the height is consistent and nothing seems to move place when navigating to another page.
+- Check that the navigation bar appearance is the same across all pages, ensuring that the height is consistent and nothing seems to move out of place when navigating to another page.
 - On desktop, check that using tab keyboard navigation takes you through each link in the displayed order, and that focus styles are applied.
+- Check that screen readers read the navigation links in the correct order they appear.
 
-## Browser Testing
+### Home Hero Anchor Link
+
+- Check that the button scrolls down to the relevant section when clicked on mobile and desktop, and that the section is fully visible and not hidden behind the fixed navigation bar.
+- Check that the button scrolls down to the relevant section when touched on mobile devices, and that the section is fully visible and not hidden behind the fixed navigation bar.
+- Check that it is possible to use tab on a keyboard to focus on the button, and that the focus state is applied, and pressing enter takes the user to the relevant section without it hiding behind the fixed navigation bar.
+- Check that the button hover state is applied when hovering over it with a mouse cursor.
+- Check that screen readers are able to identify the button and read the button content.
+
+### Buttons and Links
+
+- Check that buttons and links throughout the site take the user to the specified location.
+- Check that button and link hover styles throughout the site are applied when interacting with them with a mouse cursor.
+- Check that button and link focus styles throughout the site are applied when reached using keyboard tab navigation.
+- Check that buttons and links throughout the site are able to be reached using tab keyboard navigation in the correct order, and when pressing enter when the button/link is in focus takes you to the desired link destination.
+- Check that screen readers are able to read button and link content when scanned or navigated to using tab on a keyboard.
+
+### Journal Article Cards
+
+- Check that journal cards on the homepage and journals page open the modal content when clicked or touched.
+- Check that journal card hover styles on the homepage and journals page are applied when they are interacted with using a mouse cursor.
+- Check that the journal cards on the homepage and journals page can be navigated to using tab on a keyboard, and that focus styles are applied when they are reached, and pressing enter when they are selected opens the corresponding journal article modal.
+
+### Modals
+
+- Check that journal modals open the relevant modal content when clicked, touched, or opened by using enter on a keyboard.
+- Check that the close icon and close button successfully close the opened modal when clicked, touched, or when pressing enter on a keyboard when they are in focus, or when pressing escape on a keyboard.
+- Check that image carousels in journal modals can be interacted with using a mouse, touch, or keyboard navigation, and that hover/focus styles are applied to the navigation arrows.
+- Check that the contact form thank you modal opens after a form has been submitted successfully, and that the close icon and button close the modal when clicked, touched, or when pressing enter on a keyboard when they are in focus, or escape whilst the modal is open, and that the hover/focus styles are applied for each instance.
+- Check that the contact form thank you modal resets the contact form when it is closed, as intended.
+- Check that screen readers are able to read journal article content, navigation elements (close buttons, links, and carousel navigation previous/next arrows), as well as image alt text.
+- Check that the modals works responsively across all screen sizes, and that a user is able to scroll down to read all of the content in both desktop (mouse/spacebar) and mobile (swipe).
+
+### Masonry Image Gallery
+
+- Check that the masonry layout is applied to the images across all viewports, and that the layout adjusts when the viewport changes size, or when a mobile device is rotated between portrait and landscape view.
+- Check that the image hover state is applied when it is interacted with using a mouse.
+- Check that the focus hover state is applied whilst each image is in focus when navigating through them using tab on a keyboard.
+
+### Lightbox
+
+- Check that clicking on, touching, or pressing enter on a keyboard when an image is on focus opens the corresponding larger image file in the lightbox.
+- Check that the lightbox navigation arrows, when interacted with using a mouse, touch, or keyboard (left/right arrow keys) take you to the correct previous/next image in the gallery.
+- Check that it is possible to close the lightbox, either by clicking/touching the close icon, or by clicking or touching outside of the image.
+- Check that it is possible to close the lighbox using the escape key on a keyboard.
+- Check that it is possible to open the lightbox in fullscreen mode, either by clicking/touching the fullscreen icon, or by using the keyboard shortcut (F11) whilst the lightbox is open.
+- Check that is it also possible to navigate throught the lighbox gallery by clicking and dragging a mouse in the desired direction, or by swiping on mobile devices.
+- Check that the lightbox is responsive and works correctly across all screen sizes.
+
+### Contact Form
+
+- Check that the relevant error messages are displayed for each required field when they are empty or not the correct format, and the form submit button has been clicked, touched, or when enter has been pressed on a keyboard whilst it is in focus.
+- Check that it is possible to click, touch, and tab to each field on the form so that it can be filled out, and that a focus state is visible when a field is in focus.
+- Check that the submit button can be interacted with by clicking, touching, or pressing enter on a keyboard whilst it is in focus, and that the hover/focus styles are present.
+- Ensure that the checkbox can be selected/deselected by mouse click, touch, and by pressing the spacebar whilst it is in focus.
+- Check that the contact form labels, inputs, and placeholder text can be read by screen readers.
+- Check that the form works responsively across all screen sizes, going from a single column on smaller devices and the name/email fields occupy the same row on larger screens.
+
+### Footer
+
+- Check that the footer is present and consistent across all pages on the site, and that it works responsively.
+- Check that footer social icons open in a new tab when clicked, touched, or when enter is pressed on a keyboard whilst the link is in focus.
+- Check that the correct hover/focus styles are applied in each instance.
+
+## Cross-browser Testing
+
+Cross-browser testing was conducted by manually checking each of the features above on the different browsers and operating systems outlined below:
+
+### Windows 11
+
+#### Firefox/Chrome/Edge
+
+All features work as intended.
+
+### Android
+
+#### Firefox/Chrome
+
+All features work as intended.
+
+### macOS
+
+#### Safari/Firefox/Chrome
+
+All features work as intended.
+
+### iOS
+
+#### Safari/Firefox/Chrome
+
+All features work as intended.
 
 ## Automated Testing
 
+### HTML Validation
+
+[W3C Markup Validation Service](https://validator.w3.org/) was used to check the markup validity of the HTML used in this project. The following errors and warnings were identified upon initial checks:
+
+#### Homepage
+
+- Error: Element figcaption not allowed as child of element div in this context.
+  - Upon inspection of this element, I noticed that a figcaption had been added without the required enclosing figure element. To fix this, the image and figcaption elements were wrapped in a containing figure element.
+
+#### Journals Page
+
+- Error: Element figcaption not allowed as child of element div in this context.
+  - This was the same error present on the homepage, and the same fix was applied to resolve this issue.
+- Error: Duplicate ID second-journal-modal-label.
+  - The third journal modal H1 element ID was referencing the second journal modal label. This was updated to correctly match the third journal modal ID to fix this error.#
+- Error: The aria-labelledby attribute must point to an element in the same document.
+  - The duplicate ID error above resulted in this error, which was resolved by resolving the duplicate ID error.
+- Error: End tag footer seen, but there were open elements.
+  - Error: Unclosed element div
+    - The two errors above pointed towards an unclosed div element, with the unclosed element div error providing the reference to where in the document this occured, which was added to resolve both of these errors.
+
+#### Gallery Page
+
+- Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+  - Although only a warning, to resolve this I decided to add a H2 heading to this section, with the Bootstrap class 'visuall-hidden', so that it wouldn't show on the page and change the appearance of this section, but will still be accessible to screen readers.
+
+Following fixing the errors and warnings above, the pages were tested again and returned no further errors or warnings, confirming that they have been validated and contain no syntax errors.
+
+#### Results
+
+[Homepage](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Findex.html)
+[Journals](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Fjournals.html)
+[Gallery](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Fgallery.html)
+[Contact](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Fcontact.html)
+
+### CSS Validation
+
+[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check the CSS used in this project for errors and ensure it meets W3C compliance.
+
+The following error was identified on initial validation checks:
+
+- `#contact-form`: Value Error : padding-bottom auto is not a padding-bottom value : auto
+
+This error was fixed by removing the incorrect padding-bottom style. Although incorrect, this error lead me to remove a mobile style that was applied for an earlier iteration of the contact form layout, which was also removed as it was redundant.
+
+Upon checking the CSS again with the validation service, no errors were shown and is confirmed to be valid CSS that meets W3C compliance.
+
+### PageSpeed Insights
+
+[Google PageSpeed Insights (PSI)](https://developers.google.com/speed/docs/insights/v5/about) 'reports on the user experience of a page on both mobile and desktop devices, and provides suggestions on how that may be improved'.
+
+All pages of the website were tested using Google PSI and produced the following results:
+
+#### Home
+
+**[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/knkvvn9z1j?form_factor=mobile)**
+
+**[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/knkvvn9z1j?form_factor=desktop)**
+
+#### Journals
+
+**Mobile**
+
+**Desktop**
+
+#### Gallery
+
+**Mobile**
+
+**Desktop**
+
+#### Contact
+
+**Mobile**
+
+**Desktop**
+
+#### Largest Contentful Paint
+
+The primary issue identified with lower performance scores on mobile was related to the largest contentful pain element of the hero images. Due to the file size, it was taking longer for these to load on mobile, despite being compressed and exported served in WebP format. I tried to refrain from compressing these images too much, as I wanted them to remain as high quality as possible.
+
+In order to resolve this and improve mobile performance, I decided to create mobile image sizes for the hero images and implement them as [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
+
+#### Eliminate render-blocking resources
+
+Potential performance savings of one second could be made by eliminating the render blocking CSS attributed to Bootstrap CSS. I look at potentially [potentially implementing a fix for this](https://stackoverflow.com/questions/68035757/how-to-eliminate-render-blocking-resources-app-css), however, as the Bootstrap is it's own external file, it wouldn't be possible to separate out critical CSS and inline the styles, and as this CSS is critical to the layout of the page, I decided against it.
+
+#### Properly size images
+
+Similar to largest contentful paint, on mobile there are some images that are reported as not being sizes correctly on the viewport tested. However, images throughout the website have been exported at the largest size they can appear, but in this case they are still too large for the viewport size being tested. It would be possible to implement responsive images across the website too, but with the largest potential savings coming from the homepage of 142kb, I decided to not implement this, as the largest performance issue of the hero images had been addressed.
+
+#### Image elements do not have explicit width and height
+
+Images identified as having missing explicit width and height attributes had these values added to resolve report. This caused some of the images to appear stretched vertically, but by adding auto height style to the images, they displayed correctly.
+
+####
+
 ## Significant Bugs
+
+1. Home hero image parallax effect
+
+I found that the home hero background image was not filling the height of the header on scroll, which would reveal some of the dark blue background behind, and at a point the image would 'jump' and increase in size. On Firefox (Android), this seemed to be a result of the browser navigation bar disappearing on scroll, but a similar issue was also present on Chrome (Android), despite not having the browser navigation at the bottom of the page. This issue was not as noticeable in Safar/Firefox/Chrome on iOS, but I decided to remove the parallax scroll effect on mobile and tablet devices to mitigate this issue.
 
 ## Other Technical Difficulties
