@@ -314,7 +314,6 @@ a {
 /* Contact form */
 #contact-form {
     position: relative;
-    padding-bottom: 20%;
 }
 
 #contact-form .form-wrapper {
@@ -436,10 +435,6 @@ a {
     }
 
     /* Contact form */
-    #contact-form {
-        padding-bottom: auto;
-    }
-
     #contact-form:before {
         right: 0;
         left: auto;
