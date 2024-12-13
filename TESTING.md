@@ -250,7 +250,9 @@ All pages of the website were tested using Google PSI and produced the following
 
 The primary issue identified with lower performance scores on mobile was related to the largest contentful pain element of the hero images. Due to the file size, it was taking longer for these to load on mobile, despite being compressed and exported served in WebP format. I tried to refrain from compressing these images too much, as I wanted them to remain as high quality as possible.
 
-In order to resolve this and improve mobile performance, I decided to create mobile image sizes for the hero images and implement them as [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
+In order to attempt to resolve this and improve mobile performance, I decided to create mobile image sizes for the hero images and implement them as [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
+
+However, after implementing these responsive images and checking the performance on Google PSI, it didn't have any impact. As a result, I decided to further compress the primary images used in an attempt to further reduce their file size, without causing the image quality to deteriorate too much.
 
 #### Eliminate render-blocking resources
 
@@ -262,7 +264,7 @@ Similar to largest contentful paint, on mobile there are some images that are re
 
 #### Image elements do not have explicit width and height
 
-Images identified as having missing explicit width and height attributes had these values added to resolve report. This caused some of the images to appear stretched vertically, but by adding auto height style to the images, they displayed correctly.
+Images identified as having missing explicit width and height attributes had these values added to resolve report. This caused some of the images to appear stretched vertically, but by adding the auto height Bootstrap utility class to the images to make sure they scale at the correct aspect ratio to their width, they then displayed correctly.
 
 ####
 
