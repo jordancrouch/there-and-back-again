@@ -72,7 +72,8 @@ a {
     border-color: var(--secondary-color);
 }
 
-.btn.btn-primary:hover {
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
 }
@@ -82,7 +83,8 @@ a {
     border-color: var(--secondary-color);
 }
 
-.btn.btn-secondary:hover {
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
@@ -102,11 +104,13 @@ a {
     color: var(--primary-color);
 }
 
-.btn.btn-read-more:hover {
+.btn.btn-read-more:hover,
+.btn.btn-read-more:focus {
     color: var(--primary-color);
 }
 
-.btn.btn-read-more:hover i {
+.btn.btn-read-more:hover i,
+.btn.btn-read-more:focus i {
     margin-left: 20px;
 }
 
@@ -172,12 +176,14 @@ a {
 }
 
 /* Zoom-in effect on journal cards wrapped in a link */
-.card-wrapper:hover .card .card-img {
+.card-wrapper:hover .card .card-img,
+.card-wrapper:focus .card .card-img {
     transform: scale(1.05);
 }
 
-/* Move link arrow on journal cards on hover */
-.card-wrapper:hover .card .btn.btn-read-more i {
+/* Move link arrow on journal cards on hover and focus */
+.card-wrapper:hover .card .btn.btn-read-more i,
+.card-wrapper:focus .card .btn.btn-read-more i {
     margin-left: 20px;
 }
 
@@ -210,7 +216,8 @@ a {
 }
 
 #navbar .navbar-nav .nav-item .nav-link.active,
-#navbar .navbar-nav .nav-item .nav-link:hover {
+#navbar .navbar-nav .nav-item .nav-link:hover,
+#navbar .navbar-nav .nav-item .nav-link:focus {
     color: var(--secondary-color);
 }
 
@@ -405,7 +412,8 @@ a {
     }
 
     #navbar .navbar-nav .nav-item .nav-link:hover:after,
-    #navbar .navbar-nav .nav-item .nav-link.active:after {
+    #navbar .navbar-nav .nav-item .nav-link.active:after,
+    #navbar .navbar-nav .nav-item .nav-link:focus:after {
         width: 100%;
         right: auto;
         left: 0;
