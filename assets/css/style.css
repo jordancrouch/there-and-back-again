@@ -369,8 +369,10 @@ a {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.social-links a:hover {
+.social-links a:hover,
+.social-links a:focus {
     background-color: var(--secondary-color);
+    color: var(--white);
 }
 
 /* Media queries */
