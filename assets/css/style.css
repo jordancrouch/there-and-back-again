@@ -340,6 +340,12 @@ a {
     height: 150px;
 }
 
+#contact-form .btn:focus {
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--primary-color);
+}
+
 /* Footer */
 #footer {
     background-color: var(--primary-color);
