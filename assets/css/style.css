@@ -235,17 +235,15 @@ a {
     object-fit: cover;
 }
 
-/* Home header styles for parallax effect */
+/* Home header image styles */
 #header.home .card {
-    clip-path: inset(0);
     min-height: 860px;
     height: calc(100vh - var(--navbar-height));
     max-height: 1080px;
 }
 
 #header.home .card .card-img {
-    position: fixed;
-    background-attachment: fixed;
+    position: absolute;
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -472,6 +470,17 @@ a {
         font-size: 3.33rem;
     }
 
+    /* Home header styles for parallax effect */
+    #header.home .card {
+        clip-path: inset(0);
+    }
+
+    #header.home .card .card-img {
+        position: fixed;
+        background-attachment: fixed;
+    }
+
+    /* Increase background image overlay height */
     #header .card .card-img-overlay:before {
         height: 66.66%;
     }
