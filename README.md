@@ -70,20 +70,51 @@ This is a personal travel journal website, used to document and share trips take
 
 ### Design
 
-**Colour Scheme**
+#### Colour Scheme
 
-The colour palette consists of four colours: dark blue, light blue, turquoise, and white. This colour palette was inspired by [The Scottish Higlands colour palette by The Colour Palette Company](https://thecolourpalettecompany.com/collections/the-scottish-highlands-colour-palette), with some minor adaptations to help meet accessibility requirements.
+The colour palette was inspired by [The Scottish Higlands colour palette by The Colour Palette Company](https://thecolourpalettecompany.com/collections/the-scottish-highlands-colour-palette), with some minor adjustments to meet accessibility requirements, and consists of four colours:
 
-**Typography**
+- Dark blue: #022C40 (Primary text colour and dark backgrounds)
+- Light blue: #9FC9DF (Light background colour)
+- Turquoise: #2C8376 (Accent colour for links)
+- White: #FFFFFF (Primary background colour and for text on darker backgrounds and images)
+
+On initial design, the turquoise colour from the colour palette was used (#3AAC9C). However, it was later found to not meet the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) (AA) guidelines minimum contrast ratio of 4.5:1, instead only achieving a ratio of [2.77:1](https://www.siegemedia.com/contrast-ratio#%233AAC9c-on-white). As a result, this colour was changed to the value referenced above, in order to achieve a [contrast ratio of 4.55](https://www.siegemedia.com/contrast-ratio#%232c8376-on-white).
+
+#### Typography
 
 - [Metamorphous](https://fonts.google.com/specimen/Metamorphous) is used as the display font for large heading styles (H1 & H2). This font is inspired by Romanesque, Gothic, and Renaissance letter shapes, and was used to help convey the blend between historical landmarks and nature content throughout the website. A serif font has been set as a fallback, which will replace Metamorphous if there are any issues with the font loading correctly for any reason.
 - [Monstserrat](https://fonts.google.com/specimen/Montserrat) is used as the font for the body copy and other heading sizes. This font is a good pairing with the larger display heading font used, as they have a similar x-height, and makes for easy reading of longer passages of content. A sans serif font has been set as a fallback to replace Monsterrat, in any case where there are issues with this loading correctly.
 
-**Imagery**
+#### Imagery
 
 - The imagery used throughout the site is important to help immerse the user in the content. All photos are entirely my own, and were taken on trips to Scotland, in order to provide an authentic and realistic experience. Ther is one exception of an image used in the featured journal article (Inveruglass II), which was taken from [cottages.com](https://www.cottages.com/cottages/kintulloch-uk5230), and it's use has also been credited on the website.
 
-**High-fidelity Designs**
+#### Visual Effects
+
+**Navigation Links**
+
+The menu links in the main navigation bar have a subtle underline hover effect, which is used to help stand out and differentiate from the other links on the page, as this is the primary method of navigation on the website. The 'Contact' page button background colour was changed to use the dark blue, in order to match the colour of the other links in the navigation bar, so that it could also then have a matching hover/active state, which also helps to differentiate it from other buttons used throughout the site, so that it is clear that this is also part of the primary navigation element.
+
+**Homepage Hero**
+
+The homepage hero has parallax effect applied, which was achieved through help from [StackOverflow](https://stackoverflow.com/questions/33550450/how-to-use-css-background-attachment-in-img-tag), as header is using a bootstrap card component, so it is an img element as opposed to a background image. Due to the large size of this header image, this effect was implemented as a subtle way to immerse the user and highlight the image, allowing them to view it in it's entirety.
+
+**Hero Images**
+
+The hero images throughout the site have a pseudo element overlayed, which contains a linear gradient from top to bottom, to help set the overlayed text apart from the background and improve it's legibility, whilst trying to keep as much of the images visible as possible. A multiply blend mode has also been applied to this, which helps for more of the background image colours to filter through, as opposed to just having a solid colour blocking more of the image.
+
+Gradients used throughout the site were generated on [Colorzilla](https://www.colorzilla.com/en-gb/gradient-editor/)
+
+**'Read More' Style Links**
+
+Aside from buttons, this secondary style of links has a heavier font weight with an arrow icon to indicate that it is a link that will take you somewhere else on the site. When hovering on these links, there is a subtle movement of the arrow, to further help the user identify these links are interactive and can be clicked.
+
+**Journal Article Cards**
+
+The journal cards also have the same gradient applied to them as the hero images, but they also have a scaling effect to the images on hover. As the whole card is a link, the read more style link arrow also moves at the same time. This combination of effects were used to make these elements interesting to the user, as when they are clicked, the journal content opens up in a modal.
+
+#### High-fidelity Designs
 
 [View](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-design.pdf) - it is recommended to download the design PDF file for a better viewing experience, which can be done by right-clicking the link, followed by selecting 'Save Link As...'.
 
@@ -91,7 +122,21 @@ The colour palette consists of four colours: dark blue, light blue, turquoise, a
 
 ### Existing Features
 
+#### Navigation Bar
+
+#### Homepage Hero Anchor Link
+
+#### Journal Article Modals
+
+#### Masonry Gallery Lighbox
+
+#### Enquiry Form
+
 ### Future Feature Considerations
+
+#### Journal Article Tags
+
+#### Image Captions
 
 ## Technologies Used
 
@@ -103,7 +148,30 @@ The colour palette consists of four colours: dark blue, light blue, turquoise, a
 
 ### Frameworks, Libraries & Programs Used
 
+- [Bootstrap v5.3](https://getbootstrap.com/)
+  - Bootstrap was used primarily to build the website using elements, styles, and functionality provided from the toolkit.
+- [Google Fonts](https://fonts.google.com/)
+  - Google fonts were used to embed the "Metamorphous" and "Montserrat" fonts in the head of each file, and are used on all pages of the project.
+- [Font Awesome](https://fontawesome.com/)
+  - Font Awesome was used on all pages throughout the site, to add social media icons and arrow icons for buttons/links.
+- [Masonry](https://masonry.desandro.com/)
+  - Masonry was used on the gallery page of the website, to create a aesthetically pleasing layout for the gallery thumbnails.
+- [Images Loaded](https://imagesloaded.desandro.com/)
+  - Images Loaded was used in combination with Masonry on the gallery page, to help generate the layout used as images on the page are loaded.
+- [FS Lightbox](https://fslightbox.com/)
+  - FS Lightbox was used on the gallery page to provide an efficient way to load large, high-quality images, that the user can see by clicking on the thumbnails. This provides users with the ability to view HD quality images, without having to suffer from slow loading times, as the larger images only start to load once the thumbnails have been clicked.
+- [Git](https://git-scm.com/)
+  - Git was used for version control by utilising the Gitpod terminal to commit to Git and push to GitHub.
+- [GitHub](https://github.com/)
+  - GitHub was used to store the projects code after being pushed to Git, as well as deploying the project files so that the project can be viewed online.
+- [Figma](https://www.figma.com/)
+  - Figma was used to create the [wireframes](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-wireframes.pdf) and [designs](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-design.pdf) for the project, as well as the logo and favicon. The wireframes were created using the [BRIX Templates Website Wireframes UI Kit](https://www.figma.com/community/file/1200835310657744518)
+- [Photoshop](https://www.adobe.com/uk/products/photoshop.html)
+  - Photoshop was used to edit, resize, and export the images in WebP format throughout the website.
+
 ## Testing
+
+Testing documentation and process can be found under [TESTING.md](https://github.com/jordancrouch/there-and-back-again/blob/main/TESTING.md)
 
 ## Deployment
 
