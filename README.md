@@ -62,19 +62,81 @@ There & Back Again is a personal travel website, which was born out of a desire 
 
 ### Requirements
 
-**Encourage User Engagement**
+**Information Architecture (IA)**
 
--
+- There should be clearly defined sections throughout the site.
+- Navigation should be logical and intuitive, so it is easy to navigate to the latest journal, all journals, to the gallery, and contact page.
+- Content should be organised in a chronological manner.
+
+**Content Strategy**
+
+- Define, plan, and create the relevant content to be included.
+- Source high-quality, engaging photography to enhance the content.
+
+**Technical Implementation**
+
+- Responsive, mobile-first design, to ensure the website can be used on all devices.
+- Testing and performance optimisation to ensure the website is performant so users want to interact with it and are undeterred.
+- Accessibility compliance so everyone can access, use, and engage with the website.
+
+**User Engagement**
+
+- Contact form for users to be able to submit any queries or comments.
+- Social media links.
 
 ## Structure
 
-## Skeleton
+### Homepage
 
-## Surface
+- Immediately grabs the user's attention and provides an outline of the website's content.
+- Defined overview sections linking to each of the other pages of the website.
+- **User Goals:**
+  - Quickly understand what the website is about and it's purpose.
+  - Easily access different sections of the website.
+  - Be enticed by engaging content, like featured travel journals and images.
+- **Business Goals:**
+  - Make a strong first impression to keep users on the site.
+  - Highlight the latest content.
+  - Instil trust in the user.
+
+### Journals Page
+
+- Showcases a collection of travel journals, allowing users to explore and read different stories.
+- **User Goals:**
+  - Easily find and read content that they're interested in.
+  - Get information that can be used to plan their own trips.
+- **Business Goals:**
+  - Increase the time users spend on the site engaging with journal content.
+  - Provide useful information to help others plan their own trips.
+
+### Gallery Page
+
+- Displays a curated selection of images that highlight the beauty of Scotland.
+- **User Goals:**
+  - Quickly navigate over images to find what interests them.
+  - Full-screen viewing of high-quality images.
+- **Business Goals:**
+  - Interest and engage the user.
+  - Highlight the quality of content.
+
+### Contact Page
+
+- Provide a way for users to get in touch with the website owner.
+- **User Goals:**
+  - Get in touch with the website owner with questions/comments.
+  - Find relevant contact information, such as social links.
+- **Business Goals:**
+  - Provide a easy way for users to send a message.
+  - Build trust by being responsive and supplying useful information.
+  - Gather user feedback on how the website can be improved.
+
+## Skeleton
 
 ### Wireframes
 
 [View](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-wireframes.pdf) - it is recommended to download the wireframe PDF file for a better viewing experience, which can be done by right-clicking the link, followed by selecting 'Save Link As...'.
+
+## Surface
 
 ### Design
 
