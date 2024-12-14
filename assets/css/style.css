@@ -229,16 +229,16 @@ a {
 
 #header .card .card-img {
     /* Set min height of header */
-    min-height: 450px;
-    max-height: 450px;
+    min-height: 600px;
+    max-height: 600px;
     /* Set image size to cover to fill space and maintain ratio */
     object-fit: cover;
 }
 
 /* Home header image styles */
 #header.home .card {
-    min-height: 600px;
-    max-height: 600px;
+    min-height: 860px;
+    max-height: 1080px;
     height: calc(100vh - var(--navbar-height));
 }
 
@@ -369,22 +369,6 @@ a {
 }
 
 /* Media queries */
-/* Small devices (mobile phones, 576 and up) */
-@media screen and (min-width: 576px) {
-
-    /* Home header image styles */
-    #header.home .card {
-        min-height: 860px;
-        max-height: 1080px;
-    }
-
-    /* Header image height */
-    #header .card .card-img {
-        min-height: 600px;
-        max-height: 600px;
-    }
-}
-
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
 

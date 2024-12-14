@@ -224,27 +224,27 @@ All pages of the website were tested using Google PSI and produced the following
 
 #### Home
 
-**[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/knkvvn9z1j?form_factor=mobile)**
+[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/knkvvn9z1j?form_factor=mobile)
 
-**[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/knkvvn9z1j?form_factor=desktop)**
+[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/knkvvn9z1j?form_factor=desktop)
 
 #### Journals
 
-**Mobile**
+[Mobile]()
 
-**Desktop**
+[Desktop]()
 
 #### Gallery
 
-**Mobile**
+[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-gallery-html/bfpq1bvymc?form_factor=mobile)
 
-**Desktop**
+[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-gallery-html/bfpq1bvymc?form_factor=desktop)
 
 #### Contact
 
-**Mobile**
+[Mobile]()
 
-**Desktop**
+[Desktop]()
 
 #### Largest Contentful Paint
 
