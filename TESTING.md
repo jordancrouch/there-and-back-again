@@ -230,9 +230,9 @@ All pages of the website were tested using Google PSI and produced the following
 
 #### Journals
 
-[Mobile]()
+[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-journals-html/wjub0frwnb?form_factor=mobile)
 
-[Desktop]()
+[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-journals-html/wjub0frwnb?form_factor=desktop)
 
 #### Gallery
 
@@ -242,9 +242,9 @@ All pages of the website were tested using Google PSI and produced the following
 
 #### Contact
 
-[Mobile]()
+[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-contact-html/su0784ukcj?form_factor=mobile)
 
-[Desktop]()
+[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-contact-html/su0784ukcj?form_factor=desktop)
 
 #### Largest Contentful Paint
 
@@ -253,6 +253,8 @@ The primary issue identified with lower performance scores on mobile was related
 In order to attempt to resolve this and improve mobile performance, I decided to create mobile image sizes for the hero images and implement them as [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
 
 However, after implementing these responsive images and checking the performance on Google PSI, it didn't have any impact. As a result, I decided to further compress the primary images used in an attempt to further reduce their file size, without causing the image quality to deteriorate too much.
+
+It appeared that the performance results started to decline after trying to implement the above improvements, so I removed the responsive images and kept with the desktop images that had been futher compressed for the final outcome.
 
 #### Eliminate render-blocking resources
 
