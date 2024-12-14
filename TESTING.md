@@ -229,7 +229,7 @@ All pages of the website were tested using Google PSI and produced the following
 
 [Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/knkvvn9z1j?form_factor=desktop)
 
-![Homepage desktop psi resilts - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-home-mobile-1.png)
+![Homepage desktop psi resilts - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-home-desktop-1.png)
 
 **Journals**
 
@@ -255,7 +255,7 @@ All pages of the website were tested using Google PSI and produced the following
 
 [Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-contact-html/su0784ukcj?form_factor=mobile)
 
-![Contact page mobile psi results - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-contact-mobile-1-1.png)
+![Contact page mobile psi results - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-contact-mobile-1.png)
 
 [Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-contact-html/su0784ukcj?form_factor=desktop)
 
@@ -283,9 +283,11 @@ Similar to largest contentful paint, on mobile there are some images that are re
 
 Images identified as having missing explicit width and height attributes had these values added to resolve report. This caused some of the images to appear stretched vertically, but by adding the auto height Bootstrap utility class to the images to make sure they scale at the correct aspect ratio to their width, they then displayed correctly.
 
-#### Accssibility
+#### Accessibility
 
 Heading elements were identified to not be in a sequentuially-descending order. To fix this, the heading tags were removed, and replaced with Bootstrap utility classes to replicate the heading element size and style, in order to resolve this error and not make any alterations to the appearance of the text.
+
+Accessibility testing was also conducted with the [web accessibility evaluation tool (WAVE)](https://wave.webaim.org/) to ensure that the errors and warnings were fixed, and there were no additional errors shown separate to the Google PSI reports.
 
 #### Final Results
 
