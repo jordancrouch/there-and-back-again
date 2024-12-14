@@ -196,7 +196,8 @@ a {
 }
 
 #navbar .logo {
-    width: 195px;
+    width: 100%;
+    max-width: 195px;
 }
 
 #navbar .navbar-toggler {
@@ -400,7 +401,7 @@ a {
     }
 
     #navbar .logo {
-        width: 260px;
+        max-width: 260px;
     }
 
     #navbar .navbar-nav {
