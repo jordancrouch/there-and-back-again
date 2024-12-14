@@ -21,14 +21,14 @@ This is a personal travel journal website, used to document and share trips take
 4.  [Technologies Used](#technologies-used)
 5.  [Testing](#testing)
 6.  [Deployment](#deployment)
-    1.  [How this Project was Deployed](#how-this-project-was-deployed)
-    2.  [How to Run this Project in your Browser](#how-to-run-this-project-in-your-browser)
-    3.  [How to Run this Project Locally](#how-to-run-this-project-locally)
+    1.  [GitHub Pages](#github-pages)
+    2.  [Forking the GitHub Repository](#forking-the-github-repository)
+    3.  [Making a Local Clone](#making-a-local-clone)
 7.  [Credits](#credits)
-    1.  [Content](#content)
-    2.  [Media](#media)
-    3.  [Code](#code)
-8.  [Acknowledgements](#acknowledgements)
+    1.  [Code](#code)
+    2.  [Content](#content)
+    3.  [Media](#media)
+    4.  [Acknowledgements](#acknowledgements)
 
 # Overview
 
@@ -343,5 +343,5 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Acknowledgements
 
-- Thank you to my mentor, Ben Kavanagh, who has been extremely helpful over such a short space of time, has encouraged me to push myself, and inspired me to work harder.
+- Thank you to my mentor, Ben Kavanagh, who has been extremely helpful over such a short period of time, has encouraged me to push myself, and inspired me to work harder.
 - Thank you to our Cohort Facilitator, Lewis Dillon, for our weekly standups.
