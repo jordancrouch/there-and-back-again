@@ -11,7 +11,6 @@ The main README documentation can be found under [README.md](https://github.com/
 3. [Cross-browser Testing](#cross-browser-testing)
 4. [Automated Testing](#automated-testing)
 5. [Significant Bugs](#significant-bugs)
-6. [Other Technical Difficulties](#other-technical-difficulties)
 
 ## User Story Testing
 
@@ -199,10 +198,10 @@ Following fixing the errors and warnings above, the pages were tested again and 
 
 #### Results
 
-[Homepage](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Findex.html)
-[Journals](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Fjournals.html)
-[Gallery](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Fgallery.html)
-[Contact](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Fcontact.html)
+- [Homepage](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Findex.html)
+- [Journals](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Fjournals.html)
+- [Gallery](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Fgallery.html)
+- [Contact](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjordancrouch.github.io%2Fthere-and-back-again%2Fcontact.html)
 
 ### CSS Validation
 
@@ -222,29 +221,45 @@ Upon checking the CSS again with the validation service, no errors were shown an
 
 All pages of the website were tested using Google PSI and produced the following results:
 
-#### Home
+**Home**
 
 [Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/knkvvn9z1j?form_factor=mobile)
 
+![Homepage mobile psi results - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-home-mobile-1.png)
+
 [Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/knkvvn9z1j?form_factor=desktop)
 
-#### Journals
+![Homepage desktop psi resilts - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-home-mobile-1.png)
+
+**Journals**
 
 [Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-journals-html/wjub0frwnb?form_factor=mobile)
 
+![Journals page mobile psi results - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-journals-mobile-1.png)
+
 [Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-journals-html/wjub0frwnb?form_factor=desktop)
 
-#### Gallery
+![Journals page desktop psi results - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-journals-desktop-1.png)
+
+**Gallery**
 
 [Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-gallery-html/bfpq1bvymc?form_factor=mobile)
 
+![Gallery page mobile psi results - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-gallery-mobile-1.png)
+
 [Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-gallery-html/bfpq1bvymc?form_factor=desktop)
 
-#### Contact
+![Gallery page desktop psi results - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-gallery-desktop-1.png)
+
+**Contact**
 
 [Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-contact-html/su0784ukcj?form_factor=mobile)
 
+![Contact page mobile psi results - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-contact-mobile-1-1.png)
+
 [Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-contact-html/su0784ukcj?form_factor=desktop)
+
+![Contact page desktop psi results - first test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-contact-desktop-1.png)
 
 #### Largest Contentful Paint
 
@@ -268,12 +283,72 @@ Similar to largest contentful paint, on mobile there are some images that are re
 
 Images identified as having missing explicit width and height attributes had these values added to resolve report. This caused some of the images to appear stretched vertically, but by adding the auto height Bootstrap utility class to the images to make sure they scale at the correct aspect ratio to their width, they then displayed correctly.
 
-####
+#### Accssibility
+
+Heading elements were identified to not be in a sequentuially-descending order. To fix this, the heading tags were removed, and replaced with Bootstrap utility classes to replicate the heading element size and style, in order to resolve this error and not make any alterations to the appearance of the text.
+
+#### Final Results
+
+Each page was re-tested after implemented the above steps with the following results:
+
+**Home**
+
+[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/9xbnp11xdo?form_factor=mobile)
+
+![Homepage mobile psi results - second test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-home-mobile-2.png)
+
+[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-index-html/9xbnp11xdo?form_factor=desktop)
+
+![Homepage desktop psi results - second test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-home-desktop-2.png)
+
+**Journals**
+
+[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-journals-html/fj3sr5ca6n?form_factor=mobile)
+
+![Journals page mobile psi results - second test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-journals-mobile-2.png)
+
+[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-journals-html/fj3sr5ca6n?form_factor=desktop)
+
+![Journals page desktop psi results - second test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-journals-desktop-2.png)
+
+**Gallery**
+
+[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-gallery-html/80ja2745cf?form_factor=mobile)
+
+![Gallery page mobile psi results - second test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-gallery-mobile-2.png)
+
+[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-gallery-html/80ja2745cf?form_factor=desktop)
+
+![Gallery page desktop psi results - second test](https://raw.githubusercontent.com/jordancrouch/there-and-back-again/refs/heads/main/assets/pagespeed/psi-gallery-desktop-2.png)
+
+**Contact**
+
+[Mobile](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-contact-html/y1g2syulks?form_factor=mobile)
+
+![Contact page mobile psi results - second test](https://github.com/jordancrouch/there-and-back-again/blob/main/assets/pagespeed/psi-contact-mobile-2.png)
+
+[Desktop](https://pagespeed.web.dev/analysis/https-jordancrouch-github-io-there-and-back-again-contact-html/y1g2syulks?form_factor=desktop)
+
+![Contact page desktop psi results - second test](https://github.com/jordancrouch/there-and-back-again/blob/main/assets/pagespeed/psi-contact-desktop-2.png)
 
 ## Significant Bugs
 
-1. Home hero image parallax effect
+### Home hero image parallax effect
 
 I found that the home hero background image was not filling the height of the header on scroll, which would reveal some of the dark blue background behind, and at a point the image would 'jump' and increase in size. On Firefox (Android), this seemed to be a result of the browser navigation bar disappearing on scroll, but a similar issue was also present on Chrome (Android), despite not having the browser navigation at the bottom of the page. This issue was not as noticeable in Safar/Firefox/Chrome on iOS, but I decided to remove the parallax scroll effect on mobile and tablet devices to mitigate this issue.
 
-## Other Technical Difficulties
+### Lightbox browser scrollbar
+
+When the lightbox was opened, the vertical scroll (overflow) of the browser was hidden. This wasn't noticeable on Firefox, as the scrollbar is very narrow. However, this created a blank space on Chrome, as the scrollbar is much wider, so there was an empty space. To resolve this, vertical scroll (overflow-y) is forced on the html element using the class that lightbox adds: fslightbox-open.
+
+#### Masonry gallery
+
+When adding images to the masonry gallery, I found that the masonry grid didn't actually seem to be working. After looking further into the documentation, I realised that I hadn't added the imageslayout javascript that I was attempting to use. Further to this, I noticed some console errors, and these referenced things not on the gallery page, such as bootstrap modal. This led me to add additional checks to ensure that the elements existed before any functions were being called, and this was applied on all pages that the site's internal javascript was being loaded.
+
+### Journal article layout
+
+After adding the images to the journal article cards, they no longer aligned as intended, so that there was a consistent and equal horizontal and vertical gap between all articles, and that the smaller journal artical cards always aligned to the top and bottom of the larger featured article. This required some additional CSS styling to be added, as I wasn't able to achieve this purely with Bootstrap.
+
+---
+
+[Click here](https://github.com/jordancrouch/there-and-back-again/blob/main/README.md) to return to the main README.md.
