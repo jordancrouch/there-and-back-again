@@ -9,7 +9,7 @@ This is a personal travel journal website, used to document and share trips take
 # Table of Contents
 
 1.  [Overview](#overview)
-2.  [UX](#user-experience-ux)
+2.  [User Experience (UX)](#user-experience-ux)
     1.  [Strategy](#strategy)
     2.  [Scope](#scope)
     3.  [Structure](#structure)
@@ -31,6 +31,8 @@ This is a personal travel journal website, used to document and share trips take
 8.  [Acknowledgements](#acknowledgements)
 
 # Overview
+
+There & Back Again is a personal travel website, which was born out of a desire of wanting to have a place to document trips taken to Scotland, and be able to revisit them in the future. It also serves as a place where a large amount of photography images can be curated and added to enhance the travel journals, and to form a gallery highlighting some of our favourite images.
 
 # User Experience (UX)
 
@@ -57,6 +59,12 @@ This is a personal travel journal website, used to document and share trips take
 3.  As a frequent user, I want to be able to sign up to a newsletter so I am notified when new content is added to the website.
 
 ## Scope
+
+### Requirements
+
+**Encourage User Engagement**
+
+-
 
 ## Structure
 
@@ -124,19 +132,37 @@ The journal cards also have the same gradient applied to them as the hero images
 
 #### Navigation Bar
 
+A navigation bar is present and fixed to the top of every page. Having the first element of each page be consistent, clean, and easy to use, helps to build trust for the user that they are in control of their journey and don't feel as though they are being forced to a specific area of the website. The logo is the first item visible on the left, and is larger than the navigation links so that it is more prominent to ensure the user always knows that they are still on the same website whilst navigating to other pages.
+
 #### Homepage Hero Anchor Link
+
+The use of a large homepage hero image has been implemented to instantly provide the user with a sense of the content of the website and draw them in. However, due to the size of the hero, it could provide the possibility that users are unaware they are able to scroll down further on the homepage, if the height of the hero is taking up the full height of the viewport. A contrasting button has been utilized as a call to action, which also includes a down arrow icon, as a way to guide the user down toward the latest journal article section by interacting with the anchor link.
 
 #### Journal Article Modals
 
+Journal article content has been placed into modals to provide users with a more focused and uninterrupted reading experience. When a modal is opened, it is brought forward away from the rest of the content on the page, which allows the reader to immerse themselves in the content more easily. The modals have a set set maximum width that ensures lines of text do not become too long, which helps to provide a better reading experience. Images and image carousels are used to illustrate the article content, and provide a break between passages.
+
 #### Masonry Gallery Lighbox
 
-#### Enquiry Form
+The masonry gallery was implemented to create an aesthetically pleasing layout of high quality images, to help further engage visitors, and draw them in to want to interact with the gallery. Users can interact with an image to open it in the lightbox gallery, where the high definition images are loaded so they can be viewed at a larger size and higher resolution.
+
+#### Contact Form
+
+A basic contact form has been added to allow users to submit any comments or questions they have. It requires only a small amount of information, so that it is possible to respond to the user. An optional checkbox has been included, providing an opportunity to sign up to a newsletter and to stay up to date with the latest travel journal content.
 
 ### Future Feature Considerations
 
-#### Journal Article Tags
+#### Journal Article Categorisation/Filtering
+
+As more journal articles are added, it would provide a good opportunity to add a way users are able to sort/filter through them by date, region, location, activity type, etc. This would provide a much better user experience compare to having to filter through a long list of articles/pages, and would also help to prevent having to load a large amount of content and images on one page.
 
 #### Image Captions
+
+To help provide more immediate information to the user, it would be good to provide image captions that clearly identify the subject matter and location of each image, both in journal article content, and within the lightbox image gallery.
+
+#### Maps
+
+Static and/or interactive maps would also serve as a way to give the user additional relevant information relating to each journal. Whether it is to illustrate the distance between locations, or so that they are able to get a better understanding of local geography, or even just to search for their own points of interest around destinations.
 
 ## Technologies Used
 
@@ -148,7 +174,7 @@ The journal cards also have the same gradient applied to them as the hero images
 
 ### Frameworks, Libraries & Programs Used
 
-- [Bootstrap v5.3](https://getbootstrap.com/)
+- [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
   - Bootstrap was used primarily to build the website using elements, styles, and functionality provided from the toolkit.
 - [Google Fonts](https://fonts.google.com/)
   - Google fonts were used to embed the "Metamorphous" and "Montserrat" fonts in the head of each file, and are used on all pages of the project.
@@ -164,10 +190,20 @@ The journal cards also have the same gradient applied to them as the hero images
   - Git was used for version control by utilising the Gitpod terminal to commit to Git and push to GitHub.
 - [GitHub](https://github.com/)
   - GitHub was used to store the projects code after being pushed to Git, as well as deploying the project files so that the project can be viewed online.
+- [ui.dev/amiresponsive](https://ui.dev/amiresponsive)
+  - ui.dev/amiresponsive was used to create the website device mockup image used at the top of this file.
 - [Figma](https://www.figma.com/)
   - Figma was used to create the [wireframes](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-wireframes.pdf) and [designs](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-design.pdf) for the project, as well as the logo and favicon. The wireframes were created using the [BRIX Templates Website Wireframes UI Kit](https://www.figma.com/community/file/1200835310657744518)
 - [Photoshop](https://www.adobe.com/uk/products/photoshop.html)
   - Photoshop was used to edit, resize, and export the images in WebP format throughout the website.
+- [W3C Markup Validation Service](https://validator.w3.org/)
+  - The W3C Markup Validation Service was used to validate the project's HTML.
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+  - The W3C CSS Validation Service was used to validate the project's CSS.
+- [Google PageSpeed Insights](https://pagespeed.web.dev/)
+  - Google PageSpeed Insights was used to check the websites performance across mobile and desktop devices.
+- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+  - WAVE was used to test the websites accessibility features.
 
 ## Testing
 
@@ -179,10 +215,10 @@ Testing documentation and process can be found under [TESTING.md](https://github
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jordancrouch/there-and-back-again/)
+1. Log in to GitHub and locate the [jordancrouch/there-and-back-again](https://github.com/jordancrouch/there-and-back-again/) repository.
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
+3. In the left-hand navigation, click on "Pages".
+4. Under "Source", click the dropdown labelled "Deploy from a branch" and select "main".
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site [link](https://github.com/jordancrouch/there-and-back-again/) in the "GitHub Pages" section.
 
@@ -190,32 +226,34 @@ The project was deployed to GitHub Pages using the following steps...
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jordancrouch/there-and-back-again/)
+1. Log in to GitHub and locate the [jordancrouch/there-and-back-again](https://github.com/jordancrouch/there-and-back-again/) repository.
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jordancrouch/there-and-back-again/)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+1. Log in to GitHub and locate the [jordancrouch/there-and-back-again](https://github.com/jordancrouch/there-and-back-again/) respository.
+2. Under the repository name, click "Code".
+3. To clone the repository using HTTPS, under "Code", click on the "HTTPS" tab and copy the link.
 4. Open Git Bash
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/jordancrouch/there-and-back-again/
+$ git clone https://github.com/jordancrouch/there-and-back-again.git
 ```
 
 7. Press Enter. Your local clone will be created.
 
 ```
-$ git clone https://github.com/jordan-crouch/there-and-back-again/
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
+$ git clone https://github.com/jordancrouch/there-and-back-again.git
+> Cloning into 'there-and-back-again'...
+> remote: Enumerating objects: 573, done.
+> remote: Counting objects: 100% (157/157), done.
+> remote: Compressing objects: 100% (109/109), done.
+> remote: Total 573 (delta 80), reused 109 (delta 37), pack-reused 416 (from 1)
+> Receiving objects: 100% (573/573), 46.33 MiB | 50.95 MiB/s, done.
+> Resolving deltas: 100% (247/247), done.
 ```
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
@@ -224,8 +262,24 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
+- The homepage hero styles required to achieve the parallax effect on desktop were found on this [StackOverflow post](https://stackoverflow.com/questions/33550450/how-to-use-css-background-attachment-in-img-tag).
+- [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/) was used throughout the ensure the site was responsive, and to utilise the pre-existing components and modal functionality.
+- Code from [FS Lightbox documentation](https://fslightbox.com/javascript/documentation) was used to implement the lightbox.
+- Code from [Masonry layout documentation](https://masonry.desandro.com/layout) was used to help with implementing the masonry grid layout.
+- Code from [imagesLoaded](https://imagesloaded.desandro.com/#vanilla-javascript) was used to layout the masonry grid images as they loaded.
+- Gradient overlays used on top of images were generated by [Colorzilla](https://www.colorzilla.com/en-gb/gradient-editor/).
+
 ### Content
+
+- All text content used throughout this project was written by me.
 
 ### Media
 
+- All photographs used throughout the project are my own, other than one journal article image that was taken from [cottages.com](https://www.cottages.com/cottages/kintulloch-uk5230).
+- The logo was created in [Figma](https://www.figma.com)
+- The favicon was also created in [Figma](https://www.figma.com), and converted using [favicon.io](https://favicon.io/)
+
 ### Acknowledgements
+
+- Thank you to my mentor, Ben Kavanagh, who has been extremely helpful over such a short space of time, has encouraged me to push myself, and inspired me to work harder.
+- Thank you to our Cohort Facilitator, Lewis Dillon, for our weekly standups.
