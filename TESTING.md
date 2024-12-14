@@ -188,9 +188,13 @@ All features work as intended.
 - Error: End tag footer seen, but there were open elements.
   - Error: Unclosed element div
     - The two errors above pointed towards an unclosed div element, with the unclosed element div error providing the reference to where in the document this occured, which was added to resolve both of these errors.
+- Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+  - Although only a warning, to resolve this I decided to add a H2 heading to this section, with the Bootstrap class 'visuall-hidden', so that it wouldn't show on the page and change the appearance of this section, but will still be accessible to screen readers.
 
 #### Gallery Page
 
+- Error: Duplicate attribute width.
+  - After adding explicit image size attributes, the width attribute had been mistakenly added twice to both navigation bar and footer logos. This was fixed by changing the relevant attribute from 'width' to 'height'.
 - Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
   - Although only a warning, to resolve this I decided to add a H2 heading to this section, with the Bootstrap class 'visuall-hidden', so that it wouldn't show on the page and change the appearance of this section, but will still be accessible to screen readers.
 
