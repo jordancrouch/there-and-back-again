@@ -40,11 +40,11 @@ There & Back Again is a personal travel website, which was born out of a desire 
 
 ### User stories
 
-**First Time Visitor Goals**
+**First-time Visitor Goals**
 
-1.  As a first time visitor, I want to be able to quickly and easily identify what the main purpose of the website is.
-2.  As a first time visitor, I want to be able to navigate through the website easily, to read content and view photos that I am interested in.
-3.  As a first time visitor, I want to view high-quality images, to get a good sense of the places referenced in the journals.
+1.  As a first-time visitor, I want to be able to quickly and easily identify what the main purpose of the website is.
+2.  As a first-time visitor, I want to be able to navigate through the website easily, to read content and view photos that I am interested in.
+3.  As a first-time visitor, I want to view high-quality images, to get a good sense of the places referenced in the journals.
 
 **Returning Visitor Goals**
 
@@ -56,7 +56,7 @@ There & Back Again is a personal travel website, which was born out of a desire 
 
 1.  As a frequent user, I want to read more detailed information on travel locations, including distances to different places of interest and recommended or required travel gear that can be used as inspiration for my own adventures.
 2.  As a frequent user, I want to be able to easily find and read the latest travel journal.
-3.  As a frequent user, I want to be able to sign up to a newsletter so I am notified when new content is added to the website.
+3.  As a frequent user, I want to be able to sign up to a newsletter, so I am notified when new content is added to the website.
 
 ## Scope
 
@@ -114,7 +114,7 @@ There & Back Again is a personal travel website, which was born out of a desire 
 - Displays a curated selection of images that highlight the beauty of Scotland.
 - **User Goals:**
   - Quickly navigate over images to find what interests them.
-  - Full-screen viewing of high-quality images.
+  - Full screen viewing of high-quality images.
 - **Business Goals:**
   - Interest and engage the user.
   - Highlight the quality of content.
@@ -149,7 +149,7 @@ The colour palette was inspired by [The Scottish Higlands colour palette by The 
 - Turquoise: #2C8376 (Accent colour for links)
 - White: #FFFFFF (Primary background colour and for text on darker backgrounds and images)
 
-On initial design, the turquoise colour from the colour palette was used (#3AAC9C). However, it was later found to not meet the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) (AA) guidelines minimum contrast ratio of 4.5:1, instead only achieving a ratio of [2.77:1](https://www.siegemedia.com/contrast-ratio#%233AAC9c-on-white). As a result, this colour was changed to the value referenced above, in order to achieve a [contrast ratio of 4.55](https://www.siegemedia.com/contrast-ratio#%232c8376-on-white).
+On initial design, the turquoise colour from the colour palette was used (#3AAC9C). However, it was later found to not meet the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) (AA) guidelines minimum contrast ratio of 4.5:1, instead only achieving a ratio of [2.77:1](https://www.siegemedia.com/contrast-ratio#%233AAC9c-on-white). As a result, this colour was changed to the value referenced above, to achieve a [contrast ratio of 4.55](https://www.siegemedia.com/contrast-ratio#%232c8376-on-white).
 
 #### Typography
 
@@ -158,7 +158,7 @@ On initial design, the turquoise colour from the colour palette was used (#3AAC9
 
 #### Imagery
 
-- The imagery used throughout the site is important to help immerse the user in the content. All photos are entirely my own, and were taken on trips to Scotland, in order to provide an authentic and realistic experience. Ther is one exception of an image used in the featured journal article (Inveruglass II), which was taken from [cottages.com](https://www.cottages.com/cottages/kintulloch-uk5230), and it's use has also been credited on the website.
+- The imagery used throughout the site is important to help immerse the user in the content. All photos are entirely my own, and were taken on trips to Scotland, to provide an authentic and realistic experience. Ther is one exception of an image used in the featured journal article (Inveruglass II), which was taken from [cottages.com](https://www.cottages.com/cottages/kintulloch-uk5230), and its use has also been credited on the website.
 
 #### Visual Effects
 
@@ -168,11 +168,11 @@ The menu links in the main navigation bar have a subtle underline hover effect, 
 
 **Homepage Hero**
 
-The homepage hero has parallax effect applied, which was achieved through help from [StackOverflow](https://stackoverflow.com/questions/33550450/how-to-use-css-background-attachment-in-img-tag), as header is using a bootstrap card component, so it is an img element as opposed to a background image. Due to the large size of this header image, this effect was implemented as a subtle way to immerse the user and highlight the image, allowing them to view it in it's entirety.
+The homepage hero has parallax effect applied, which was achieved through help from [StackOverflow](https://stackoverflow.com/questions/33550450/how-to-use-css-background-attachment-in-img-tag), as header is using a bootstrap card component, so it is an image element as opposed to a background image. Due to the large size of this header image, this effect was implemented as a subtle way to immerse the user and highlight the image, allowing them to view it in its entirety.
 
 **Hero Images**
 
-The hero images throughout the site have a pseudo element overlayed, which contains a linear gradient from top to bottom, to help set the overlayed text apart from the background and improve it's legibility, whilst trying to keep as much of the images visible as possible. A multiply blend mode has also been applied to this, which helps for more of the background image colours to filter through, as opposed to just having a solid colour blocking more of the image.
+The hero images throughout the site have a pseudo element overlayed, which contains a linear gradient from top to bottom, to help set the overlayed text apart from the background and improve its legibility, whilst trying to keep as much of the images visible as possible. A multiply blend mode has also been applied to this, which helps for more of the background image colours to filter through, as opposed to just having a solid colour blocking more of the image.
 
 Gradients used throughout the site were generated on [Colorzilla](https://www.colorzilla.com/en-gb/gradient-editor/)
 
@@ -182,7 +182,7 @@ Aside from buttons, this secondary style of links has a heavier font weight with
 
 **Journal Article Cards**
 
-The journal cards also have the same gradient applied to them as the hero images, but they also have a scaling effect to the images on hover. As the whole card is a link, the read more style link arrow also moves at the same time. This combination of effects were used to make these elements interesting to the user, as when they are clicked, the journal content opens up in a modal.
+The journal cards also have the same gradient applied to them as the hero images, but they also have a scaling effect to the images on hover. As the whole card is a link, the read more style link arrow also moves at the same time. This combination of effects was used to make these elements interesting to the user, as when they are clicked, the journal content opens in a modal.
 
 #### High-fidelity Designs
 
@@ -194,19 +194,19 @@ The journal cards also have the same gradient applied to them as the hero images
 
 #### Navigation Bar
 
-A navigation bar is present and fixed to the top of every page. Having the first element of each page be consistent, clean, and easy to use, helps to build trust for the user that they are in control of their journey and don't feel as though they are being forced to a specific area of the website. The logo is the first item visible on the left, and is larger than the navigation links so that it is more prominent to ensure the user always knows that they are still on the same website whilst navigating to other pages.
+A navigation bar is present and fixed to the top of every page. Having the first element of each page be consistent, clean, and easy to use, helps to build trust for the user that they are in control of their journey and don't feel as though they are being forced to a specific area of the website. The logo is the first item visible on the left and is larger than the navigation links so that it is more prominent to ensure the user always knows that they are still on the same website whilst navigating to other pages.
 
 #### Homepage Hero Anchor Link
 
-The use of a large homepage hero image has been implemented to instantly provide the user with a sense of the content of the website and draw them in. However, due to the size of the hero, it could provide the possibility that users are unaware they are able to scroll down further on the homepage, if the height of the hero is taking up the full height of the viewport. A contrasting button has been utilized as a call to action, which also includes a down arrow icon, as a way to guide the user down toward the latest journal article section by interacting with the anchor link.
+The use of a large homepage hero image has been implemented to instantly provide the user with a sense of the content of the website and draw them in. However, due to the size of the hero, it could provide the possibility that users are unaware they are able to scroll down further on the homepage, if the height of the hero is taking up the full height of the viewport. A contrasting button has been utilized as a call to action, which also includes a down arrow icon, to guide the user down toward the latest journal article section by interacting with the anchor link.
 
 #### Journal Article Modals
 
-Journal article content has been placed into modals to provide users with a more focused and uninterrupted reading experience. When a modal is opened, it is brought forward away from the rest of the content on the page, which allows the reader to immerse themselves in the content more easily. The modals have a set set maximum width that ensures lines of text do not become too long, which helps to provide a better reading experience. Images and image carousels are used to illustrate the article content, and provide a break between passages.
+Journal article content has been placed into modals to provide users with a more focused and uninterrupted reading experience. When a modal is opened, it is brought forward away from the rest of the content on the page, which allows the reader to immerse themselves in the content more easily. The modals have a set maximum width that ensures lines of text do not become too long, which helps to provide a better reading experience. Images and image carousels are used to illustrate the article content and provide a break between passages.
 
-#### Masonry Gallery Lighbox
+#### Masonry Gallery Lightbox
 
-The masonry gallery was implemented to create an aesthetically pleasing layout of high quality images, to help further engage visitors, and draw them in to want to interact with the gallery. Users can interact with an image to open it in the lightbox gallery, where the high definition images are loaded so they can be viewed at a larger size and higher resolution.
+The masonry gallery was implemented to create an aesthetically pleasing layout of high-quality images, to help further engage visitors, and draw them in to want to interact with the gallery. Users can interact with an image to open it in the lightbox gallery, where the high-definition images are loaded so they can be viewed at a larger size and higher resolution.
 
 #### Contact Form
 
@@ -216,7 +216,7 @@ A basic contact form has been added to allow users to submit any comments or que
 
 #### Journal Article Categorisation/Filtering
 
-As more journal articles are added, it would provide a good opportunity to add a way users are able to sort/filter through them by date, region, location, activity type, etc. This would provide a much better user experience compare to having to filter through a long list of articles/pages, and would also help to prevent having to load a large amount of content and images on one page.
+As more journal articles are added, it would provide a good opportunity to add a way users are able to sort/filter through them by date, region, location, activity type, etc. This would provide a much better user experience compared to having to scroll through a long list of articles/pages, and would also help to prevent having to load a large amount of content and images on one page.
 
 #### Image Captions
 
@@ -224,7 +224,7 @@ To help provide more immediate information to the user, it would be good to prov
 
 #### Maps
 
-Static and/or interactive maps would also serve as a way to give the user additional relevant information relating to each journal. Whether it is to illustrate the distance between locations, or so that they are able to get a better understanding of local geography, or even just to search for their own points of interest around destinations.
+Static and/or interactive maps would also serve to give the user additional relevant information relating to each journal. Whether it is to illustrate the distance between locations, or so that they can get a better understanding of local geography, or even just to search for their own points of interest around destinations.
 
 ## Technologies Used
 
@@ -243,7 +243,7 @@ Static and/or interactive maps would also serve as a way to give the user additi
 - [Font Awesome](https://fontawesome.com/)
   - Font Awesome was used on all pages throughout the site, to add social media icons and arrow icons for buttons/links.
 - [Masonry](https://masonry.desandro.com/)
-  - Masonry was used on the gallery page of the website, to create a aesthetically pleasing layout for the gallery thumbnails.
+  - Masonry was used on the gallery page of the website, to create an aesthetically pleasing layout for the gallery thumbnails.
 - [Images Loaded](https://imagesloaded.desandro.com/)
   - Images Loaded was used in combination with Masonry on the gallery page, to help generate the layout used as images on the page are loaded.
 - [FS Lightbox](https://fslightbox.com/)
@@ -253,7 +253,7 @@ Static and/or interactive maps would also serve as a way to give the user additi
 - [GitHub](https://github.com/)
   - GitHub was used to store the projects code after being pushed to Git, as well as deploying the project files so that the project can be viewed online.
 - [ui.dev/amiresponsive](https://ui.dev/amiresponsive)
-  - ui.dev/amiresponsive was used to create the website device mockup image used at the top of this file.
+  - ui.dev/amiresponsive was used to create the website device mock-up image used at the top of this file.
 - [Figma](https://www.figma.com/)
   - Figma was used to create the [wireframes](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-wireframes.pdf) and [designs](https://jordancrouch.github.io/there-and-back-again/assets/wireframes/there-and-back-again-design.pdf) for the project, as well as the logo and favicon. The wireframes were created using the [BRIX Templates Website Wireframes UI Kit](https://www.figma.com/community/file/1200835310657744518)
 - [Photoshop](https://www.adobe.com/uk/products/photoshop.html)
@@ -286,7 +286,7 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log in to GitHub and locate the [jordancrouch/there-and-back-again](https://github.com/jordancrouch/there-and-back-again/) repository.
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
@@ -294,7 +294,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [jordancrouch/there-and-back-again](https://github.com/jordancrouch/there-and-back-again/) respository.
+1. Log in to GitHub and locate the [jordancrouch/there-and-back-again](https://github.com/jordancrouch/there-and-back-again/) repository.
 2. Under the repository name, click "Code".
 3. To clone the repository using HTTPS, under "Code", click on the "HTTPS" tab and copy the link.
 4. Open Git Bash
