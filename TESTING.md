@@ -293,6 +293,10 @@ Heading elements were identified to not be in a sequentially-descending order. T
 
 Accessibility testing was also conducted with the [web accessibility evaluation tool (WAVE)](https://wave.webaim.org/) to ensure that the errors and warnings were fixed, and there were no additional errors shown separate to the Google PSI reports.
 
+After changing the heading elements as describe above, and with adding visually hidden heading elements to sections that did not contain a header, there were new errors regarding skipped heading levels. To rectify this, journal article card headings were changed back to H3 with the "h5 fw-semibold" class applied to keep the same styling as before.
+
+For journal article content, a H2 tag was skipped between the main H1 modal title and H3 tags used for content headings. To resolve this skipped tag, the H3 headings were changed to H2 with "h3 fw-semibold" classes applied, to keep the same styling. However, this meant that the secondary font used for the larger heading tags (H1 & H2) was being used, so a CSS style was added for this instance, where a H2 tag utilised the "h3" class.
+
 #### Final Results
 
 Each page was re-tested after implemented the above steps with the following results:
